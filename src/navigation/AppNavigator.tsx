@@ -7,15 +7,14 @@ import {AuthNavigator} from './AuthNavigator';
 type StackNavigatorProps = React.ComponentProps<typeof Stack.Navigator>;
 
 export type AppNavigatorParams = {
-  Auth: undefined;
-  Home: undefined;
+  [AppRoutes.AUTH]: undefined;
+  [AppRoutes.HOME]: undefined;
 };
 
 const Stack = createStackNavigator<AppNavigatorParams>();
 
 export const AppNavigator = (
-  // eslint-disable-next-line prettier/prettier
-  props: Partial<StackNavigatorProps>
+  props: Partial<StackNavigatorProps>,
 ): React.ReactElement => (
   <Stack.Navigator {...props}>
     <Stack.Screen name={AppRoutes.AUTH} component={AuthNavigator} />

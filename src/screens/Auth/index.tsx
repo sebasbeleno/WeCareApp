@@ -1,1 +1,2 @@
-export {AuthScreen} from './AuthScreen';
+export {WelcomeScreen} from './WelcomeScreen';
+export {SingInScreen} from './SignInScreen';
