@@ -10,10 +10,10 @@ export const input: Record<Input, TextStyle> = {
   primary: {
     ...Typography.regular.x30,
     lineHeight: 0,
-    padding: Sizing.x20,
+    paddingVertical: Sizing.x10,
     borderColor: Colors.neutral.s300,
     borderWidth: Outlines.borderWidth.hairline,
-    borderRadius: Outlines.borderRadius.small,
+    borderRadius: Outlines.borderRadius.max,
   },
 };
 

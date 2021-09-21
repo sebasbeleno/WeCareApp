@@ -51,6 +51,11 @@ export const layout: Record<Layout, number> = {
   x140: 230,
 };
 
+type Relative = 'w100';
+export const relative: Record<Relative, string> = {
+  w100: '100%',
+};
+
 export const x1 = layout.x1;
 export const x2 = layout.x2;
 export const x3 = layout.x3;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, StyleSheet, View, TouchableHighlight} from 'react-native';
 import {Layout} from '@ui-kitten/components';
-import {Buttons, Colors, Typography, Sizing} from '../../styles';
+import {Buttons, Colors, Typography, Sizing, Containers} from '../../styles';
 import {WelcomeScreenProps} from '../../navigation/AuthNavigator';
 import {AppRoutes} from '../../navigation/AppRoutes';
 
@@ -35,11 +35,7 @@ const styles = StyleSheet.create({
     color: Colors.primary.brand,
   },
   container: {
-    backgroundColor: Colors.secondary.brand,
-    flex: 1,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
+    ...Containers.fullSize.buttonContainer,
   },
   buttonsContainer: {
     display: 'flex',
@@ -57,7 +53,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   textContainer: {
-    marginVertical: 40,
+    ...Containers.text.title,
   },
   buttonText: {
     ...Typography.bold.x30,
